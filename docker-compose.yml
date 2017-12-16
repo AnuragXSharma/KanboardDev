@@ -1,0 +1,14 @@
+version: '2'
+services:
+  kanboard:
+    image: kanboard/kanboard:latest
+    ports:
+     - "80:80"
+    volumes:
+     - kanboard_data:/var/www/app/data
+     - kanboard_plugins:/var/www/app/plugins
+volumes:
+  kanboard_data:
+    driver: local
+  kanboard_plugins:
+    driver: local
