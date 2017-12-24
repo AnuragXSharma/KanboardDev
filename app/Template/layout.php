@@ -14,7 +14,7 @@
 
         <?= $this->asset->colorCss() ?>
         <?= $this->asset->css('assets/css/vendor.min.css') ?>
-        <?= $this->asset->css('assets/css/app.min.css') ?>
+        <?= $this->asset->css('assets/css/app.css') ?>
         <?= $this->asset->customCss() ?>
 
         <?php if (! isset($not_editable)): ?>
