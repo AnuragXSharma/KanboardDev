@@ -1152,7 +1152,7 @@ td a.dropdown-menu:hover i {
 header {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 10px;
+  padding: 5px 15px 5px 10px;
   background-color: #395998; }
   header .title-container {
     flex: 1;
@@ -1174,7 +1174,9 @@ header {
     min-width: 120px;
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
     @media (max-width: 480px) {
       header .menus-container {
         order: 1;
