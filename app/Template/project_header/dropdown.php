@@ -1,5 +1,5 @@
 <div class="dropdown">
-    <a href="#" class="dropdown-menu action-menu"><?= t('Menu') ?> <i class="fa fa-caret-down"></i></a>
+    <a href="#" class="dropdown-menu action-menu"><i class="fa fa-navicon"></i></a>
     <ul>
         <?php if ($board_view): ?>
         <li>
