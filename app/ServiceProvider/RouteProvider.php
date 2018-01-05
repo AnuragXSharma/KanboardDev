@@ -32,6 +32,7 @@ class RouteProvider implements ServiceProviderInterface
 
             // Dashboard
             $container['route']->addRoute('dashboard', 'DashboardController', 'show');
+            $container['route']->addRoute('Anurag', 'Anurag', 'show');
             $container['route']->addRoute('dashboard/:user_id', 'DashboardController', 'show');
             $container['route']->addRoute('dashboard/:user_id/projects', 'DashboardController', 'projects');
             $container['route']->addRoute('dashboard/:user_id/tasks', 'DashboardController', 'tasks');

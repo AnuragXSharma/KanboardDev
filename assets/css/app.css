@@ -1152,7 +1152,8 @@ td a.dropdown-menu:hover i {
 header {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 15px 5px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #395998; }
   header .title-container {
     flex: 1;
@@ -1174,7 +1175,7 @@ header {
     min-width: 120px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     border: 1px solid #ddd;
     border-radius: 5px; }
     @media (max-width: 480px) {
@@ -1194,16 +1195,20 @@ a i.web-notification-icon {
     color: #000; }
 
 .logo a {
-  opacity: 0.5;
+  opacity: 0.8;
   color: #d40000;
   text-decoration: none; }
 .logo span {
   color: #333; }
 .logo a:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   color: #333; }
 .logo a:focus span, .logo a:hover span {
   color: #d40000; }
+
+.imglogo {
+  width: 40px;
+  height: 34px; }
 
 .page-header {
   margin-bottom: 20px;

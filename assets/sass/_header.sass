@@ -4,6 +4,8 @@
 header
   display: flex
   flex-wrap: wrap
+  padding-left:  10px
+  padding-right:  10px
   background-color: rgba(57,89,152,1)
 
   .title-container
@@ -26,7 +28,7 @@ header
     min-width: 120px
     display: flex
     align-items: center
-    justify-content: flex-end
+    justify-content: space-around
     border: 1px solid #ddd
     border-radius: 5px
     @include xs-device
@@ -36,6 +38,7 @@ header
 
   h1
     font-size: size('title')
+    text-align: center
     .tooltip
       opacity: 0.3
       font-size: size('tiny')

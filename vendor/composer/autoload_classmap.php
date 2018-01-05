@@ -193,6 +193,7 @@ return array(
     'Kanboard\\Controller\\CurrencyController' => $baseDir . '/app/Controller/CurrencyController.php',
     'Kanboard\\Controller\\CustomFilterController' => $baseDir . '/app/Controller/CustomFilterController.php',
     'Kanboard\\Controller\\DashboardController' => $baseDir . '/app/Controller/DashboardController.php',
+    'Kanboard\\Controller\\Anurag' => $baseDir . '/app/Controller/Anurag.php',
     'Kanboard\\Controller\\DocumentationController' => $baseDir . '/app/Controller/DocumentationController.php',
     'Kanboard\\Controller\\ExportController' => $baseDir . '/app/Controller/ExportController.php',
     'Kanboard\\Controller\\ExternalTaskCreationController' => $baseDir . '/app/Controller/ExternalTaskCreationController.php',
