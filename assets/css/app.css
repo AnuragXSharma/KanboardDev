@@ -1184,7 +1184,8 @@ header {
         margin-bottom: 5px;
         margin-left: auto; } }
   header h1 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-align: center; }
     header h1 .tooltip {
       opacity: 0.3;
       font-size: 0.7em; }
@@ -1211,7 +1212,7 @@ a i.web-notification-icon {
   height: 34px; }
 
 .page-header {
-  margin-bottom: 20px;
+  margin: 0 -10px 20px -10px;
   background-color: #203764; }
   .page-header .dropdown {
     padding-right: 10px; }
@@ -1278,7 +1279,7 @@ a i.web-notification-icon {
 
 .sidebar {
   max-width: 25%;
-  min-width: 230px;
+  min-width: 160px;
   background-color: #e9ebee; }
   @media (max-width: 768px) {
     .sidebar {
@@ -1288,23 +1289,21 @@ a i.web-notification-icon {
     margin-top: 0; }
   .sidebar > ul a {
     text-decoration: none;
-    color: #999;
+    color: #333;
     font-weight: 300; }
     .sidebar > ul a:hover {
-      color: #333; }
+      color: #203764;
+      font-weight: bold; }
   .sidebar > ul li {
     list-style-type: none;
     line-height: 35px;
     border-bottom: 1px dotted #333;
     padding-left: 13px; }
     .sidebar > ul li:hover {
-      border-left: 5px solid #555;
       background-color: gainsboro; }
-    .sidebar > ul li.active {
-      border-left: 5px solid #333; }
-      .sidebar > ul li.active a {
-        color: #333;
-        font-weight: bold; }
+    .sidebar > ul li.active a {
+      color: #333;
+      font-weight: bold; }
 
 .sidebar-icons > ul li {
   padding-left: 0; }

@@ -25,7 +25,7 @@
 
 .sidebar
   max-width: 25%
-  min-width: 230px
+  min-width: 160px
   background-color:  #e9ebee
   @include sm-device
     flex: 1 auto
@@ -36,20 +36,19 @@
   > ul
     a
       text-decoration: none
-      color: color('light')
+      color: color('primary')
       font-weight: 300
       &:hover
-        color: color('primary')
+        color: color('blue')
+        font-weight: bold
     li
       list-style-type: none
       line-height: 35px
       border-bottom: 1px dotted #333
       padding-left: 13px
       &:hover
-        border-left: 5px solid #555
         background-color: rgba(220,220,220,1)
       &.active
-        border-left: 5px solid #333
         a
           color: color('primary')
           font-weight: bold
