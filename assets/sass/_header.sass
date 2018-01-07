@@ -11,6 +11,7 @@ header
   .title-container
     flex: 1
     min-width: 300px
+    display: flex
     @include xs-device
       order: 3
 
@@ -26,6 +27,7 @@ header
 
   .menus-container
     min-width: 120px
+    max-height: 30px
     display: flex
     align-items: center
     justify-content: space-around
@@ -38,7 +40,10 @@ header
 
   h1
     font-size: size('title')
+    color:  color(primary2)
     text-align: center
+    width: 40%
+    margin: auto
     .tooltip
       opacity: 0.3
       font-size: size('tiny')

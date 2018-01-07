@@ -1,7 +1,7 @@
-<h1>
-    <span class="avatar avatar-20 avatar-inline">
+<span class="avatar avatar-20 avatar-inline">
         <?= $this->url->link('<img class="imglogo" src="/KanboardDev/assets/img/favicon.png">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
     </span>
+<h1>
     <span class="title">
         <?php if (! empty($project) && ! empty($task)): ?>
             <?= $this->url->link($this->text->e($project['name']), 'BoardViewController', 'show', array('project_id' => $project['id'])) ?>
