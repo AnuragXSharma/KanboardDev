@@ -1,18 +1,17 @@
 <section id="main">
     <div class="page-header">
-        <ul>
-            <?php if ($this->user->hasAccess('ProjectCreationController', 'create')): ?>
-                <li>
-                    <?= $this->modal->medium('plus', t('New project'), 'ProjectCreationController', 'create') ?>
-                </li>
-            <?php endif ?>
-            <?php if ($this->app->config('disable_private_project', 0) == 0): ?>
-                <li>
-                    <?= $this->modal->medium('lock', t('New private project'), 'ProjectCreationController', 'createPrivate') ?>
-                </li>
-            <?php endif ?>
-            <li>
-                <?= $this->url->icon('folder', t('Project management'), 'ProjectListController', 'show') ?>
+        <ul class="views">
+            <li <?= $this->app->checkMenuSelection('DashboardController', 'show') ?>>
+            <?= $this->url->link(t('Overview'), 'DashboardController', 'show', array('user_id' => $user['id'])) ?>
+            </li>
+            <li <?= $this->app->checkMenuSelection('DashboardController', 'projects') ?>>
+            <?= $this->url->link(t('My projects'), 'DashboardController', 'projects', array('user_id' => $user['id'])) ?>
+            </li>
+            <li <?= $this->app->checkMenuSelection('DashboardController', 'tasks') ?>>
+            <?= $this->url->link(t('My tasks'), 'DashboardController', 'tasks', array('user_id' => $user['id'])) ?>
+            </li>
+            <li <?= $this->app->checkMenuSelection('DashboardController', 'subtasks') ?>>
+            <?= $this->url->link(t('My subtasks'), 'DashboardController', 'subtasks', array('user_id' => $user['id'])) ?>
             </li>
             <li>
                 <?= $this->modal->medium('dashboard', t('My activity stream'), 'ActivityController', 'user') ?>
@@ -21,7 +20,7 @@
         </ul>
     </div>
     <section class="sidebar-container" id="dashboard">
-        <?= $this->render($sidebar_template, array('user' => $user)) ?>
+        
         <div class="sidebar-content">
             <?= $content_for_sublayout ?>
         </div>
