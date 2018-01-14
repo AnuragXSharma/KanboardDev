@@ -1,3 +1,4 @@
+<!--Common header template for developing header -->
 <?php $_title = $this->render('header/title', array(
     'project' => isset($project) ? $project : null,
     'task' => isset($task) ? $task : null,

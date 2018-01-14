@@ -1,5 +1,5 @@
 <div class="page-header">
-    <ul>
+    <ul class="views">
         <?= $this->hook->render('template:project-list:menu:before') ?>
 
         <?php if ($this->user->hasAccess('ProjectCreationController', 'create')): ?>

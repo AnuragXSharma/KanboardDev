@@ -1,7 +1,7 @@
 <section id="main">
     <div class="page-header">
         <?php if ($this->user->hasAccess('UserCreationController', 'show')): ?>
-        <ul>
+        <ul class="views">
             <li>
                 <?= $this->url->icon('user', t('All users'), 'UserListController', 'show') ?>
             </li>

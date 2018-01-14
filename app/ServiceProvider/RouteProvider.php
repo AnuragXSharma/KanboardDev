@@ -157,7 +157,6 @@ class RouteProvider implements ServiceProviderInterface
             $container['route']->addRoute('settings', 'ConfigController', 'index');
             $container['route']->addRoute('settings/application', 'ConfigController', 'application');
             $container['route']->addRoute('settings/project', 'ConfigController', 'project');
-            $container['route']->addRoute('settings/project', 'ConfigController', 'project');
             $container['route']->addRoute('settings/board', 'ConfigController', 'board');
             $container['route']->addRoute('settings/integrations', 'ConfigController', 'integrations');
             $container['route']->addRoute('settings/webhook', 'ConfigController', 'webhook');

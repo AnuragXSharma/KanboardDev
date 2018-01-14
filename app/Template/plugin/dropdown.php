@@ -67,5 +67,9 @@
                 <?= $this->url->icon('cog', t('Settings'), 'ProjectViewController', 'show', array('project_id' => $project['id'])) ?>
             </li>
         <?php endif ?>
+
+        <li>
+            <?= $this->url->icon('folder', t('Manage projects'), 'ProjectListController', 'show') ?>
+        </li>
     </ul>
 </div>

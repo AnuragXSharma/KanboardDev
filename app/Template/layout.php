@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Master Layout Template to develop layout across all pages-->
 <html>
     <head>
         <meta charset="utf-8">

@@ -1,21 +1,15 @@
 <div class="page-header">
-    <h2><?= t('About') ?></h2>
+    <h2><?= t('About Project Management Master') ?></h2>
 </div>
 <div class="panel">
-    <ul>
-        <li>
-            <?= t('Official website:') ?>
-            <a href="https://kanboard.org/" target="_blank" rel="noreferer">https://kanboard.org/</a>
-        </li>
-        <li>
-            <?= t('Author:') ?>
-            <strong>Frédéric Guillot</strong> (<a href="https://github.com/kanboard/kanboard/blob/master/CONTRIBUTORS.md" target="_blank"><?= t('contributors') ?></a>)
-        </li>
-        <li>
-            <?= t('License:') ?>
-            <strong>MIT</strong>
-        </li>
-    </ul>
+    <p> Project Management Master uses Kanboard concept to easily visualize flow of activities.
+    It can be used for effectively controlling any process be it Projects, Education, Schools, Sales, Society Maintenance Management 
+    and even govt. process. Though current template is developed keeping projects in mind.
+    Its is developed based on open source and encourage anyone to reach out to me to collaborate and build further on it.
+    It can be adapted by SME for their project management either in-house or cloud based. Please visit us @ for your feedback and comments.
+    I am working on my next release and any feedback and help will be appreciated.
+    </p>
+   
 </div>
 
 <div class="page-header">
@@ -30,14 +24,6 @@
         <li>
             <?= t('PHP version:') ?>
             <strong><?= PHP_VERSION ?></strong>
-        </li>
-        <li>
-            <?= t('PHP SAPI:') ?>
-            <strong><?= PHP_SAPI ?></strong>
-        </li>
-        <li>
-            <?= t('OS version:') ?>
-            <strong><?= php_uname('s').' '.php_uname('r') ?></strong>
         </li>
         <li>
             <?= t('Database driver:') ?>

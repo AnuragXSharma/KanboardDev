@@ -1,6 +1,6 @@
 <div class="page-header">
     <?php if ($this->user->hasAccess('UserCreationController', 'show')): ?>
-    <ul>
+    <ul class="views">
         <li>
             <?= $this->modal->medium('plus', t('New user'), 'UserCreationController', 'show') ?>
         </li>

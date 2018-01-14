@@ -1,6 +1,6 @@
 <div class="page-header">
     <h2><?= t('Currency rates') ?></h2>
-    <ul>
+    <ul class="views">
         <li>
             <?= $this->modal->medium('plus', t('Add or change currency rate'), 'CurrencyController', 'create') ?>
         </li>

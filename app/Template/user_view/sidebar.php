@@ -1,16 +1,8 @@
 <div class="sidebar">
-    <div class="sidebar-title">
-        <h2><?= t('Information') ?></h2>
-    </div>
-    <ul>
+     <ul>
         <?php if ($this->user->hasAccess('UserViewController', 'show')): ?>
             <li <?= $this->app->checkMenuSelection('UserViewController', 'show') ?>>
                 <?= $this->url->link(t('Summary'), 'UserViewController', 'show', array('user_id' => $user['id'])) ?>
-            </li>
-        <?php endif ?>
-        <?php if ($this->user->isAdmin()): ?>
-            <li>
-                <?= $this->url->link(t('User dashboard'), 'DashboardController', 'show', array('user_id' => $user['id'])) ?>
             </li>
         <?php endif ?>
         <?php if ($this->user->isAdmin() || $this->user->isCurrentUser($user['id'])): ?>

@@ -1,5 +1,5 @@
 <div class="page-header">
-    <ul>
+    <ul class="views">
         <li><?= $this->url->icon('user', t('All users'), 'UserListController', 'show') ?></li>
         <li><?= $this->modal->medium('user-plus', t('New group'), 'GroupCreationController', 'show') ?></li>
     </ul>
