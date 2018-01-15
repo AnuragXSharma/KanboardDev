@@ -148,9 +148,9 @@ class LayoutHelper extends Base
      * @param  array  $params
      * @return string
      */
-    public function dashboard($template, array $params)
+    public function dashboard($layout,$sidebar,$template, array $params)
     {
-        return $this->subLayout('dashboard/layout', 'dashboard/sidebar', $template, $params);
+        return $this->subLayout($layout, $sidebar, $template, $params);
     }
 
     /**

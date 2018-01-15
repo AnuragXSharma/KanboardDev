@@ -22,7 +22,7 @@
                 <?= $this->url->icon('cubes', t('Plugins'), 'PluginController', 'show') ?>
             </li>
             <li>
-                <?= $this->url->icon('cog', t('Settings'), 'ConfigController', 'index') ?>
+                <?= $this->url->icon('cog', t('Application Settings'), 'ConfigController', 'index') ?>
             </li>
         <?php endif ?>
 

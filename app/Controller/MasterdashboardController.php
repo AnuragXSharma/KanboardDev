@@ -8,7 +8,7 @@ namespace Kanboard\Controller;
  * @package  Kanboard\Controller
  * @author   Frederic Guillot
  */
-class Anurag extends BaseController
+class MasterdashboardController extends BaseController
 {
     /**
      * Dashboard overview
@@ -19,10 +19,9 @@ class Anurag extends BaseController
     {
         $user = $this->getUser();
 
-        $this->response->html($this->helper->layout->dashboard('dashboard/overview', array(
+        $this->response->html($this->helper->layout->dashboard('masterboard/layout', 'masterboard/sidebar','masterboard/overview', array(
             'title'              => t('Dashboard for %s', $this->helper->user->getFullname($user)),
             'user'               => $user,
-            'overview_paginator' => $this->dashboardPagination->getOverview($user['id']),
             'project_paginator'  => $this->projectPagination->getDashboardPaginator($user['id'], 'show', 10),
         )));
     }

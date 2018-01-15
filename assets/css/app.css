@@ -1306,12 +1306,13 @@ a i.web-notification-icon {
   .sidebar > ul li {
     list-style-type: none;
     line-height: 35px;
+    font-size: 0.9em;
     border-bottom: 1px dotted #333;
     padding-left: 13px; }
     .sidebar > ul li:hover {
       background-color: gainsboro; }
     .sidebar > ul li.active a {
-      color: #333;
+      color: #3333cc;
       font-weight: bold; }
 
 .sidebar-icons > ul li {
@@ -1555,7 +1556,7 @@ a i.web-notification-icon {
         border: 1px solid #ddd; } }
     .views li.active a {
       font-weight: bold;
-      color: #000;
+      color: #3333cc;
       text-decoration: none; }
     .views li:first-child {
       border-top-left-radius: 5px;
