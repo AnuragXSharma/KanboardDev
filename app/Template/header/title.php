@@ -1,5 +1,5 @@
 <span class="avatar avatar-20 avatar-inline">
-        <?= $this->url->link('<img class="imglogo" src="/KanboardDev/assets/img/favicon.png">', 'DashboardController', 'show', array(), false, '', t('Dashboard')) ?>
+        <?= $this->url->link('<img class="imglogo" src="/KanboardDev/assets/img/favicon.png">', 'MasterdashboardController', 'show', array(), false, '', t('Dashboard')) ?>
     </span>
 <h1>
     <span class="title">

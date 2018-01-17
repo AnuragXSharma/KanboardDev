@@ -19,10 +19,10 @@ class MasterdashboardController extends BaseController
     {
         $user = $this->getUser();
 
-        $this->response->html($this->helper->layout->dashboard('masterboard/layout', 'masterboard/sidebar','masterboard/overview', array(
-            'title'              => t('Dashboard for %s', $this->helper->user->getFullname($user)),
+        $this->response->html($this->helper->layout->masterboard('masterboard/overview', array(
+            'title'              => t('Master board for %s', $this->helper->user->getFullname($user)),
             'user'               => $user,
-            'project_paginator'  => $this->projectPagination->getDashboardPaginator($user['id'], 'show', 10),
+            'project_paginator'  => $this->projectPagination->getMasterboardPaginator($user['id'], 'show', 10),
         )));
     }
 

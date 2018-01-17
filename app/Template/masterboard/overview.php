@@ -16,8 +16,8 @@
     <div class="table-list">
         <?= $this->render('project_list/header', array('paginator' => $project_paginator)) ?>
         <?php foreach ($project_paginator->getCollection() as $project): ?>
-            <div class="table-list-row table-border-left">
-                <div>
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue">
                     <?php if ($this->user->hasProjectAccess('ProjectViewController', 'show', $project['id'])): ?>
                         <?= $this->render('project/dropdown', array('project' => $project)) ?>
                     <?php else: ?>
@@ -31,12 +31,19 @@
                     <?php if ($project['is_private']): ?>
                         <i class="fa fa-lock fa-fw" title="<?= t('Private project') ?>"></i>
                     <?php endif ?>
-                </div>
+                </header>
                 <div class="table-list-details">
+                    <table>
+                        <tr>
                     <?php foreach ($project['columns'] as $column): ?>
-                        <strong title="<?= t('Task count') ?>"><?= $column['nb_open_tasks'] ?></strong>
-                        <small><?= $this->text->e($column['title']) ?></small>
+                        <td>
+                           <small><?= $this->text->e($column['title']) ?></small>
+                           <strong title="<?= t('Task count') ?>"><?= $column['nb_open_tasks'] ?></strong>
+                       
+                        </td>
                     <?php endforeach ?>
+                        </tr>
+                   </table>
                 </div>
             </div>
         <?php endforeach ?>

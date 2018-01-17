@@ -35,4 +35,16 @@ class ProjectPagination extends Base
             ->setQuery($query)
             ->calculateOnlyIf($this->request->getStringParam('pagination') === 'projects');
     }
+     public function getMasterboardPaginator($user_id, $method, $max)
+    {
+        $query = $this->projectModel->getQueryColumnStats($this->projectPermissionModel->getActiveProjectIds($user_id));
+        $this->hook->reference('pagination:dashboard:project:query', $query);
+
+        return $this->paginator
+            ->setUrl('MasterdashboardController', $method, array('pagination' => 'projects', 'user_id' => $user_id))
+            ->setMax($max)
+            ->setOrder(ProjectModel::TABLE.'.name')
+            ->setQuery($query)
+            ->calculateOnlyIf($this->request->getStringParam('pagination') === 'projects');
+    }
 }

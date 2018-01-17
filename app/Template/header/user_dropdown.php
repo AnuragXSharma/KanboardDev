@@ -11,6 +11,7 @@
         <li>
             <?= $this->url->icon('folder', t('Projects management'), 'ProjectListController', 'show') ?>
         </li>
+
         <?php if ($this->user->hasAccess('UserListController', 'show')): ?>
             <li>
                 <?= $this->url->icon('user', t('Users management'), 'UserListController', 'show') ?>
