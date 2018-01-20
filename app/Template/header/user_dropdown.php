@@ -20,18 +20,12 @@
                 <?= $this->url->icon('group', t('Groups management'), 'GroupListController', 'index') ?>
             </li>
             <li>
-                <?= $this->url->icon('cubes', t('Plugins'), 'PluginController', 'show') ?>
-            </li>
-            <li>
                 <?= $this->url->icon('cog', t('Application Settings'), 'ConfigController', 'index') ?>
             </li>
         <?php endif ?>
 
         <?= $this->hook->render('template:header:dropdown') ?>
-
-        <li>
-            <?= $this->url->icon('life-ring', t('Documentation'), 'DocumentationController', 'show') ?>
-        </li>
+       
         <?php if (! DISABLE_LOGOUT): ?>
             <li>
                 <?= $this->url->icon('sign-out', t('Logout'), 'AuthController', 'logout') ?>
