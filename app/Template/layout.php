@@ -8,7 +8,11 @@
         <meta name="robots" content="noindex,nofollow">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="referrer" content="no-referrer">
-
+        <meta property="og:url"           content="http://ec2-52-33-112-112.us-west-2.compute.amazonaws.com/KanboardDev" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Prime Project Master" />
+        <meta property="og:description"   content="Prime Consulting Services Kanbanboard agile" />
+      
         <?php if (isset($board_public_refresh_interval)): ?>
             <meta http-equiv="refresh" content="<?= $board_public_refresh_interval ?>">
         <?php endif ?>

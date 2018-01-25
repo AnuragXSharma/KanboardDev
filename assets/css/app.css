@@ -54,9 +54,13 @@ ul.no-bullet li {
 .assign-me {
   vertical-align: bottom; }
 
+.w3-container a {
+  color: #FFFFFF; }
+
 a {
   color: #3366CC;
-  border: none; }
+  border: none;
+  text-decoration: none; }
   a:focus {
     outline: 0;
     color: #DF5353;
@@ -1198,7 +1202,7 @@ header {
       font-size: 0.7em; }
 
 a i.web-notification-icon {
-  color: #3366CC; }
+  color: #FFFFFF; }
   a i.web-notification-icon:focus, a i.web-notification-icon:hover {
     color: #000; }
 

@@ -17,7 +17,7 @@
         <?= $this->render('project_list/header', array('paginator' => $project_paginator)) ?>
         <?php foreach ($project_paginator->getCollection() as $project): ?>
             <div class="w3-card-4">
-                <header class="w3-container w3-blue">
+                <header class="w3-container">
                     <?php if ($this->user->hasProjectAccess('ProjectViewController', 'show', $project['id'])): ?>
                         <?= $this->render('project/dropdown', array('project' => $project)) ?>
                     <?php else: ?>
