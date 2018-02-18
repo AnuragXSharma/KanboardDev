@@ -110,12 +110,6 @@
             <?php endif ?>
         <?php endif ?>
 
-        <?php if (! empty($task['description'])): ?>
-            <span title="<?= t('Description') ?>" class="tooltip" data-href="<?= $this->url->href('BoardTooltipController', 'description', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>">
-                <i class="fa fa-file-text-o"></i>
-            </span>
-        <?php endif ?>
-
         <?php if ($task['is_active'] == 1): ?>
             <div class="task-icon-age">
                 <span title="<?= t('Task age in days')?>" class="task-icon-age-total"><?= $this->dt->age($task['date_creation']) ?></span>
