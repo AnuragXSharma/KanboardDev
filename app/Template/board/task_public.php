@@ -1,13 +1,6 @@
 <div class="task-board color-<?= $task['color_id'] ?> <?= $task['date_modification'] > time() - $board_highlight_period ? 'task-board-recent' : '' ?>">
-    <div class="task-board-header">
+    <div class="task-board-header w3-round-small">
         <?= $this->url->link('#'.$task['id'], 'TaskViewController', 'readonly', array('task_id' => $task['id'], 'token' => $project['token'])) ?>
-
-        <?php if (! empty($task['owner_id'])): ?>
-            <span class="task-board-assignee">
-                <?= $this->text->e($task['assignee_name'] ?: $task['assignee_username']) ?>
-            </span>
-        <?php endif ?>
-
         <?= $this->render('board/task_avatar', array('task' => $task)) ?>
     </div>
 

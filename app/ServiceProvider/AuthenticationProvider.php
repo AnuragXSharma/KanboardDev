@@ -142,7 +142,8 @@ class AuthenticationProvider implements ServiceProviderInterface
         $acl->add('FeedController', '*', Role::APP_PUBLIC);
         $acl->add('AvatarFileController', array('show', 'image'), Role::APP_PUBLIC);
         $acl->add('UserInviteController', array('signup', 'register'), Role::APP_PUBLIC);
-
+        
+        $acl->add('UserViewController', array('timesheet','sessions','lastLogin'), Role::APP_ADMIN);
         $acl->add('ConfigController', '*', Role::APP_ADMIN);
         $acl->add('TagController', '*', Role::APP_ADMIN);
         $acl->add('PluginController', '*', Role::APP_ADMIN);

@@ -3,7 +3,7 @@
 
 <?php if ($has_project_creation_access || (!$has_project_creation_access && $is_private_project_enabled)): ?>
     <div class="dropdown header-creation-menu">
-        <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-plus fa-fw"></i><i class="fa fa-caret-down"></i></a>
+        <a href="#" class="dropdown-menu dropdown-menu-link-icon w3-btn w3-white w3-round-small"><i class="fa fa-plus fa-fw"></i><i class="fa fa-caret-down"></i></a>
         <ul>
             <?php if ($has_project_creation_access): ?>
                 <li>

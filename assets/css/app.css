@@ -990,7 +990,7 @@ ul.dropdown-submenu-open {
   text-decoration: underline; }
 
 td a.dropdown-menu strong {
-  color: #333; }
+  color: #FFFFFF; }
   td a.dropdown-menu strong i {
     color: #333; }
 td a.dropdown-menu i {
@@ -1704,10 +1704,17 @@ div.draggable-item-selected {
   position: relative;
   margin-bottom: 4px;
   border: 1px solid #000;
-  padding: 2px;
+  padding: 0px;
   word-wrap: break-word;
   font-size: 0.9em;
   border-radius: 6px; }
+
+.task-board-header {
+  position: relative;
+  margin-bottom: 4px;
+  border: 1px solid #000;
+  background-color: #9b9b9b;
+  font-size: small; }
 
 div.task-board-recent {
   border-width: 2px; }
@@ -1716,7 +1723,7 @@ div.task-board-status-closed {
   border: 1px dotted #555; }
 
 .task-board a {
-  color: #000;
+  color: #333;
   text-decoration: none; }
 
 .task-board-collapsed {
@@ -1726,9 +1733,14 @@ div.task-board-status-closed {
 
 .task-board-title {
   margin-top: 5px;
-  margin-bottom: 8px; }
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center; }
   .task-board-title a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .task-board-saving-state {
   opacity: 0.3; }
@@ -2204,7 +2216,7 @@ span.task-date-overdue {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .w3-container, .w3-panel {
-  padding: 0.01em 16px; }
+  padding: 0.01em 8px; }
 
 .w3-panel {
   margin-top: 16px;
@@ -2212,7 +2224,7 @@ span.task-date-overdue {
 
 .w3-card, .w3-card-4 {
   display: inline-block;
-  max-width: 200px;
+  max-width: 250px;
   margin: 10px; }
 
 .w3-blue, .w3-hover-blue:hover {
@@ -2233,5 +2245,41 @@ span.task-date-overdue {
   text-align: center;
   width: 60%;
   margin: auto; }
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 1px 1px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap; }
+
+.w3-round-small {
+  border-radius: 2px; }
+
+.w3-round, .w3-round-medium {
+  border-radius: 4px; }
+
+.w3-round-large {
+  border-radius: 8px; }
+
+.w3-round-xlarge {
+  border-radius: 16px; }
+
+.w3-round-xxlarge {
+  border-radius: 32px; }
+
+.w3-white {
+  color: #000 !important;
+  background-color: #fff !important; }
+  .w3-white:focus, .w3-white:hover {
+    color: #fff !important;
+    background-color: #999 !important; }
 
 /*# sourceMappingURL=app.css.map */
