@@ -8,6 +8,8 @@
     <li <?= $this->app->checkMenuSelection('TaskListController') ?>>
         <?= $this->url->icon('list', '', 'TaskListController', 'show', array('project_id' => $project['id'], 'search' => $filters['search']), false, 'view-listing', t('Project Tasks')) ?>
     </li>
-
+    <li>
+ <?= $this->render('project_header/dropdown', array('project' => $project, 'board_view' => $board_view)) ?>
+    </li>
     <?= $this->hook->render('template:project-header:view-switcher', array('project' => $project, 'filters' => $filters)) ?>
 </ul>
