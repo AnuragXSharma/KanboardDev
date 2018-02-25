@@ -1167,7 +1167,7 @@ header {
     display: flex; }
     @media (max-width: 480px) {
       header .title-container {
-        order: 3; } }
+        order: 1; } }
   header .board-selector-container {
     min-width: 320px;
     display: flex;
@@ -1189,8 +1189,7 @@ header {
     @media (max-width: 480px) {
       header .menus-container {
         order: 1;
-        margin-bottom: 5px;
-        margin-left: auto; } }
+        margin-bottom: 5px; } }
   header h1 {
     font-size: 1.5em;
     color: #FFFFFF;
@@ -1226,7 +1225,7 @@ a i.web-notification-icon {
   margin: 0 -10px;
   background-color: #203764; }
   .page-header .dropdown {
-    padding-right: 10px; }
+    padding-right: 0px; }
   .page-header h2 {
     margin: 0;
     padding-left: 10px;
@@ -1241,14 +1240,7 @@ a i.web-notification-icon {
       text-decoration: none; }
       .page-header h2 a:focus, .page-header h2 a:hover {
         color: #999; }
-  .page-header ul {
-    text-align: left;
-    margin-top: 5px;
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 0.9em; }
   .page-header li {
-    display: inline;
     padding-right: 15px; }
     @media (max-width: 480px) {
       .page-header li {
@@ -1512,6 +1504,7 @@ a i.web-notification-icon {
 .project-header {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   margin-bottom: 0px;
   background-color: #203764; }
   .project-header .dropdown-component {
@@ -1524,7 +1517,7 @@ a i.web-notification-icon {
       .project-header .dropdown-component {
         float: none; } }
   .project-header .views-switcher-component {
-    margin-top: 4px; }
+    margin-top: 0px; }
     @media (max-width: 768px) {
       .project-header .views-switcher-component {
         float: none;
@@ -1535,13 +1528,18 @@ a i.web-notification-icon {
       margin: 0; }
 
 .views {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 4px;
+  margin-bottom: 4px; }
   @media (max-width: 560px) {
     .views {
       width: 100%; } }
   @media (max-width: 768px) {
     .views {
       margin-top: 10px;
+      margin-bottom: 10px;
       font-size: 1em; } }
   @media (max-width: 480px) {
     .views {

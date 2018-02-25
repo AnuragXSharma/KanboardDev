@@ -5,11 +5,17 @@ $breakdown-switcher: 560px
 
 .views
   font-size: size('compact')
+  display: inline-block
+  margin-top:  6px
+  margin-right: 4px
+  margin-bottom:  4px
   @include custom-device($breakdown-switcher)
     width: 100%
   @include sm-device
     margin-top: 10px
+    margin-bottom: 10px
     font-size: size('normal')
+    float:none
   @include xs-device
     margin-top: 5px
   li

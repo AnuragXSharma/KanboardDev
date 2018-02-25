@@ -1,10 +1,8 @@
 <div class="project-header" >
     <?= $this->hook->render('template:project:header:before', array('project' => $project)) ?>
-    <div class="views-switcher-component">
-        <?= $this->render('project_header/views', array('project' => $project, 'filters' => $filters,'board_view' => $board_view)) ?>
-    </div>
-
     
+        <?= $this->render('project_header/views', array('project' => $project, 'filters' => $filters,'board_view' => $board_view)) ?>
+        
     <div class="filter-box-component">
         <?= $this->render('project_header/search', array(
             'project' => $project,

@@ -14,6 +14,9 @@
             <li>
                 <?= $this->url->icon('users', t('View all groups'), 'GroupListController', 'index') ?>
             </li>
+            <li>
+               <?= $this->render('user_view/dropdown', array('user' => $user)) ?>
+            </li>
         </ul>
         <?php endif ?>
     </div>
