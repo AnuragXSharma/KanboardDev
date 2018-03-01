@@ -1,12 +1,14 @@
 @import variables
 @import mixins
 
-.project-header
+.project-header,  .page-header
   display: flex
-  flex-direction: row-reverse
   flex-wrap: wrap
   margin-bottom: 0px
+.project-header
   background-color: bg-color('projectheader')
+  flex-direction: row-reverse
+  flex-wrap: wrap
   .dropdown-component
     padding: 4px 8px
     border: 1px solid #ddd

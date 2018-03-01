@@ -1,6 +1,3 @@
-<div class="page-header">
-    <h2><?= $this->url->link(t('My subtasks'), 'DashboardController', 'subtasks', array('user_id' => $user['id'])) ?> (<?= $nb_subtasks ?>)</h2>
-</div>
 <?php if ($nb_subtasks == 0): ?>
     <p class="alert"><?= t('There is nothing assigned to you.') ?></p>
 <?php else: ?>

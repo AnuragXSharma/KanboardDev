@@ -1,17 +1,3 @@
-<div class="filter-box margin-bottom">
-    <form method="get" action="<?= $this->url->dir() ?>" class="search">
-        <?= $this->form->hidden('controller', array('controller' => 'SearchController')) ?>
-        <?= $this->form->hidden('action', array('action' => 'index')) ?>
-
-        <div class="input-addon">
-            <?= $this->form->text('search', array(), array(), array('placeholder="'.t('Search').'"'), 'input-addon-field') ?>
-            <div class="input-addon-item">
-                <?= $this->render('app/filters_helper') ?>
-            </div>
-        </div>
-    </form>
-</div>
-
 <?php if (! $project_paginator->isEmpty()): ?>
     <div class="table-list">
         <?= $this->render('project_list/header', array('paginator' => $project_paginator)) ?>
