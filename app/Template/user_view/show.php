@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Summary') ?></h2>
 </div>
 <ul class="panel">
@@ -9,7 +9,7 @@
     <?= $this->hook->render('template:user:show:profile:info', array('user' => $user)) ?>
 </ul>
 
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Security') ?></h2>
 </div>
 <ul class="panel">
@@ -27,7 +27,7 @@
     <?php endif ?>
 </ul>
 
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Preferences') ?></h2>
 </div>
 <ul class="panel">

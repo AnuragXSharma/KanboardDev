@@ -1220,38 +1220,43 @@ a i.web-notification-icon {
   width: 40px;
   height: 34px; }
 
-.page-header {
+.sub-header {
   margin: 0;
-  background-color: #203764; }
-  .page-header .dropdown {
-    padding-right: 0px; }
+  background-color: #e9ebee; }
+
+.page-header {
+  background-color: #203764;
+  margin: 0; }
   .page-header h2 {
-    margin: 0;
-    padding-left: 10px;
-    padding-top: 5px;
+    color: #FFFFFF; }
+
+.page-header .dropdown, .sub-header .dropdown {
+  padding-right: 0px; }
+.page-header h2, .sub-header h2 {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: 1px dotted #ccc; }
+  .page-header h2 a, .sub-header h2 a {
     color: #333;
-    background-color: #e9ebee;
-    font-size: 1em;
-    font-weight: bold;
-    border-bottom: 1px dotted #ccc; }
-    .page-header h2 a {
-      color: #333;
-      text-decoration: none; }
-      .page-header h2 a:focus, .page-header h2 a:hover {
-        color: #999; }
-  .page-header li {
-    padding-right: 15px; }
-    @media (max-width: 480px) {
-      .page-header li {
-        display: block;
-        line-height: 1.5em; } }
-    .page-header li.active a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold; }
-    .page-header li:hover, .page-header li:focus {
-      text-decoration: none;
-      color: #203764; }
+    text-decoration: none; }
+    .page-header h2 a:focus, .page-header h2 a:hover, .sub-header h2 a:focus, .sub-header h2 a:hover {
+      color: #999; }
+.page-header li, .sub-header li {
+  padding-right: 15px; }
+  @media (max-width: 480px) {
+    .page-header li, .sub-header li {
+      display: block;
+      line-height: 1.5em; } }
+  .page-header li.active a, .sub-header li.active a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold; }
+  .page-header li:hover, .page-header li:focus, .sub-header li:hover, .sub-header li:focus {
+    text-decoration: none;
+    color: #203764; }
 
 .menu-inline {
   margin-bottom: 5px; }
@@ -1451,7 +1456,7 @@ a i.web-notification-icon {
 .filter-box {
   max-width: 1024px;
   margin: auto;
-  width: 50%; }
+  width: 45%; }
   @media (max-width: 560px) {
     .filter-box {
       width: 100%; } }

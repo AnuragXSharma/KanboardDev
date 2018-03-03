@@ -1,17 +1,22 @@
 @import variables
 @import mixins
 
+.sub-header
+  margin: 0
+  background-color:  bg-color('heading2')
+
 .page-header
-  margin: 0  
   background-color:  rgba(32,55,100,1)
+  margin: 0
+  h2
+    color: color('primary2')
+.page-header,  .sub-header
   .dropdown
     padding-right: 0px
   h2
     margin: 0
     padding-left:  10px
     padding-top:  5px
-    color: color('primary')
-    background-color: bg-color('heading2')
     font-size:  size('normal')
     font-weight: bold
     border-bottom: 1px dotted #ccc

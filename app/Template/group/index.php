@@ -1,15 +1,19 @@
 <div class="page-header">
     <ul class="views">
-        <li><?= $this->url->icon('user', t('All users'), 'UserListController', 'show') ?></li>
-        <li><?= $this->modal->medium('user-plus', t('New group'), 'GroupCreationController', 'show') ?></li>
+        <li>
+        <?= $this->url->icon('user', t('All users'), 'UserListController', 'show') ?>
+        </li>
+        <li>
+        <?= $this->modal->medium('user-plus', t('New group'), 'GroupCreationController', 'show') ?>
+        </li>
     </ul>
     <div class="filter-box">
-    <form method="get" action="<?= $this->url->dir() ?>" class="search">
+     <form method="get" action="<?= $this->url->dir() ?>" class="search">
         <?= $this->form->hidden('controller', array('controller' => 'GroupListController')) ?>
         <?= $this->form->hidden('action', array('action' => 'index')) ?>
         <?= $this->form->text('search', $values, array(), array('placeholder="'.t('Search').'"'),'input-addon-field') ?>
-    </form>
-</div>
+     </form>
+    </div>
 </div>
 
 
