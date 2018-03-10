@@ -1,6 +1,6 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Link labels') ?></h2>
-    <ul>
+    <ul class="views">
         <li>
             <?= $this->modal->medium('plus', t('Add link label'), 'LinkController', 'create') ?>
         </li>

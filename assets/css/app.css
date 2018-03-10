@@ -1082,6 +1082,11 @@ td a.dropdown-menu:hover i {
     top: 4px;
     right: 5px; }
 
+.board-selector-container {
+  width: 50%;
+  margin: auto;
+  min-width: 300px; }
+
 #suggest-menu {
   position: absolute;
   display: block;

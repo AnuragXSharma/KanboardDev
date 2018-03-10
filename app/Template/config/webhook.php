@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Webhook settings') ?></h2>
 </div>
 <form method="post" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="off">
@@ -12,7 +12,7 @@
     </div>
 </form>
 
-<div class="page-header margin-top">
+<div class="sub-header margin-top">
     <h2><?= t('Webhook token') ?></h2>
 </div>
 <div class="panel">

@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Integration with third-party services') ?></h2>
 </div>
 

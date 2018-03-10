@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Currency rates') ?></h2>
     <ul class="views">
         <li>

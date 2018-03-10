@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Email settings') ?></h2>
 </div>
 <form method="post" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'email')) ?>" autocomplete="off">

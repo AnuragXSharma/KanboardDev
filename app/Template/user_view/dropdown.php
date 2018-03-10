@@ -1,5 +1,5 @@
 <div class="dropdown">
-    <a href="#" class="dropdown-menu action-menu"><i class="fa fa-navicon"></i></a>
+    <a href="#" class="dropdown-menu action-menu w3-white"><i class="fa fa-fw fa-cog"></i><i class="fa fa-fw fa-user"></i></a>
  <ul>
         <?php if ($this->user->isAdmin() || $this->user->isCurrentUser($user['id'])): ?>
 

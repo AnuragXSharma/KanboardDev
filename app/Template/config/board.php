@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Board settings') ?></h2>
 </div>
 <form method="post" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'board')) ?>" autocomplete="off">

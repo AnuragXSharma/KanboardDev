@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('About Project Management Master') ?></h2>
 </div>
 <div class="panel">

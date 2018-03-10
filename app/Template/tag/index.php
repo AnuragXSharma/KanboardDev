@@ -1,6 +1,6 @@
-<div class="page-header">
+<div class="sub-header">
     <h2><?= t('Global tags') ?></h2>
-    <ul>
+    <ul class="views">
         <li>
             <?= $this->modal->medium('plus', t('Add new tag'), 'TagController', 'create') ?>
         </li>

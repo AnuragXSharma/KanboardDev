@@ -3,6 +3,12 @@
         <?php if ($this->user->hasAccess('UserCreationController', 'show')): ?>
         <ul class="views">
             <li>
+               <?= $this->render('user_view/userdropdown', array('user' => $user)) ?>
+            </li>
+            <li>
+               <?= $this->render('user_view/dropdown', array('user' => $user)) ?>
+            </li>
+            <li>
                 <?= $this->url->icon('user', t('All users'), 'UserListController', 'show') ?>
             </li>
             <li>
@@ -14,14 +20,10 @@
             <li>
                 <?= $this->url->icon('users', t('View all groups'), 'GroupListController', 'index') ?>
             </li>
-            <li>
-               <?= $this->render('user_view/dropdown', array('user' => $user)) ?>
-            </li>
         </ul>
         <?php endif ?>
     </div>
     <section class="sidebar-container" id="user-section">
-        <?= $this->render('user_view/sidebar', array('user' => $user)) ?>
         <div class="sidebar-content">
             <?= $content_for_sublayout ?>
         </div>
