@@ -1,42 +1,9 @@
-<?php if (! $project_paginator->isEmpty()): ?>
-    <div class="table-list">
-        <?= $this->render('project_list/header', array('paginator' => $project_paginator)) ?>
-        <?php foreach ($project_paginator->getCollection() as $project): ?>
-            <div class="table-list-row table-border-left">
-                <div>
-                    <?php if ($this->user->hasProjectAccess('ProjectViewController', 'show', $project['id'])): ?>
-                        <?= $this->render('project/dropdown', array('project' => $project)) ?>
-                    <?php else: ?>
-                        <strong><?= '#'.$project['id'] ?></strong>
-                    <?php endif ?>
-
-                    <span class="table-list-title <?= $project['is_active'] == 0 ? 'status-closed' : '' ?>">
-                        <?= $this->url->link($this->text->e($project['name']), 'BoardViewController', 'show', array('project_id' => $project['id'])) ?>
-                    </span>
-
-                    <?php if ($project['is_private']): ?>
-                        <i class="fa fa-lock fa-fw" title="<?= t('Private project') ?>"></i>
-                    <?php endif ?>
-                </div>
-                <div class="table-list-details">
-                    <?php foreach ($project['columns'] as $column): ?>
-                        <strong title="<?= t('Task count') ?>"><?= $column['nb_open_tasks'] ?></strong>
-                        <small><?= $this->text->e($column['title']) ?></small>
-                    <?php endforeach ?>
-                </div>
-            </div>
-        <?php endforeach ?>
-    </div>
-
-    <?= $project_paginator ?>
-<?php endif ?>
-
 <?php if (empty($overview_paginator)): ?>
     <p class="alert"><?= t('There is nothing assigned to you.') ?></p>
 <?php else: ?>
     <?php foreach ($overview_paginator as $result): ?>
         <?php if (! $result['paginator']->isEmpty()): ?>
-            <div class="page-header">
+            <div class="sub-header">
                 <h2><?= $this->url->link($this->text->e($result['project_name']), 'BoardViewController', 'show', array('project_id' => $result['project_id'])) ?></h2>
             </div>
 

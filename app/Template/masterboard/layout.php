@@ -1,6 +1,9 @@
 <section id="main">
     <div class="page-header">
         <ul class="views">
+            <li <?= $this->app->checkMenuSelection('MasterdashboardController', 'show') ?>>
+            <?= $this->url->link(t('Dashboard'), 'MasterdashboardController', 'show', array('user_id' => $user['id'])) ?>
+            </li>
             <li <?= $this->app->checkMenuSelection('DashboardController', 'show') ?>>
             <?= $this->url->link(t('Overview'), 'DashboardController', 'show', array('user_id' => $user['id'])) ?>
             </li>

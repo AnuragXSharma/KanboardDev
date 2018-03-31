@@ -152,7 +152,8 @@ class Client extends Base
         }
 
         $startTime = microtime(true);
-        $stream = @fopen(trim($url), 'r', false, stream_context_create($this->getContext($method, $content, $headers)));
+        
+        $stream = fopen(trim($url), 'r', false, stream_context_create($this->getContext($method, $content, $headers)));
         $response = '';
 
         if (is_resource($stream)) {
